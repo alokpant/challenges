@@ -36,9 +36,10 @@ class WordCounter
     end
 
     # display all_data if there are more than single file
-    return if filenames.count == 1
+    return all_data if filenames.count == 1
 
     print_result("All data", all_data)
+    all_data
   end
 
   # To facilitate also calculating counts only when string is passed.
